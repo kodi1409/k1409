@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.misterio" name="Misterio" version="3.0.0" provider-name="MK">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+    <import addon="plugin.video.youtube" version="7.4.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es_ES">Esta noche no apagues la luz.</summary>
+    <description lang="es_ES">Relatos de terror, brujería, horror cósmico, investigaciones paranormales y misterios. Canales en español latino y castellano mediante YouTube. Diseñado para Kodi 21 y 22; requiere YouTube configurado.</description>
+    <summary lang="en_GB">Spanish-language horror and mystery on YouTube.</summary>
+    <description lang="en_GB">Curated Spanish-language channels, horror stories and paranormal mysteries. Requires the YouTube addon.</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
+    <news>3.0.0: Python 3, navegación renovada, 12 secciones, 28 canales y selección de vídeos.</news>
+  </extension>
+</addon>
