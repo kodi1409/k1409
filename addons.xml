@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+  <addon id="repository.k1409"
+         name="Repositorio K1409"
+         version="1.0.0"
+         provider-name="K1409">
+    <extension point="xbmc.addon.repository">
+      <dir minversion="21.0.0">
+        <info>https://kodi1409.github.io/k1409/addons.xml</info>
+        <checksum>https://kodi1409.github.io/k1409/addons.xml.md5</checksum>
+        <datadir>https://kodi1409.github.io/k1409/</datadir>
+        <hashes>false</hashes>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="es_ES">Addons para Kodi creados por K1409.</summary>
+      <description lang="es_ES">Instala y actualiza Misterio y los demás addons publicados por K1409.</description>
+      <platform>all</platform>
+      <license>GPL-3.0-or-later</license>
+      <website>https://kodi1409.github.io/k1409/</website>
+      <source>https://github.com/kodi1409/k1409</source>
+    </extension>
+  </addon>
+
+  <addon id="plugin.video.misterio"
+         name="Misterio"
+         version="3.0.0"
+         provider-name="MK">
+    <requires>
+      <import addon="xbmc.python" version="3.0.1"/>
+      <import addon="plugin.video.youtube" version="7.4.4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="es_ES">Esta noche no apagues la luz.</summary>
+      <description lang="es_ES">Relatos de terror, brujería, horror cósmico, investigaciones paranormales y misterios. Canales en español latino y castellano mediante YouTube. Diseñado para Kodi 21 y 22; requiere YouTube configurado.</description>
+      <summary lang="en_GB">Spanish-language horror and mystery on YouTube.</summary>
+      <description lang="en_GB">Curated Spanish-language channels, horror stories and paranormal mysteries. Requires the YouTube addon.</description>
+      <platform>all</platform>
+      <license>GPL-3.0-or-later</license>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+      <news>3.0.0: Python 3, navegación renovada, 12 secciones, 28 canales y selección de vídeos.</news>
+    </extension>
+  </addon>
+
+</addons>
